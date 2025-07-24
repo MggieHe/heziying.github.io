@@ -1044,6 +1044,13 @@
                 }
             });
             
+
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
+
+
+
             // 添加输入框清除功能
             searchInput.addEventListener('input', function() {
                 if (this.value === '') {
@@ -1098,9 +1105,6 @@
         
         // 页面加载完成后初始化
         window.addEventListener('DOMContentLoaded', initPage);
-        document.addEventListener('contextmenu', function(e) {
-    e.preventDefault();
-});
     </script>
 </body>
 </html>
