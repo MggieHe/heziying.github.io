@@ -603,7 +603,7 @@
         .category-软件使用 .card-header { background: linear-gradient(135deg, #ba68c8, #ab47bc); }
         .category-信息科技 .card-header { background: linear-gradient(135deg, #4db6ac, #26a69a); }
         .category-数学工具 .card-header { background: linear-gradient(135deg, #ffb74d, #ff9800); }
-        .category-视频加工 .card-header { background: linear-gradient(135deg, #81c784, #66bb6a); }
+        .category-课堂游戏 .card-header { background: linear-gradient(135deg, #81c784, #66bb6a); }
         .category-微课制作 .card-header { background: linear-gradient(135deg, #e57373, #f44336); }
         
         /* 分类装饰条 */
@@ -615,7 +615,7 @@
         .category-软件使用::before { background: linear-gradient(90deg, #ba68c8, #ab47bc); }
         .category-信息科技::before { background: linear-gradient(90deg, #4db6ac, #26a69a); }
         .category-数学工具::before { background: linear-gradient(90deg, #ffb74d, #ff9800); }
-        .category-视频加工::before { background: linear-gradient(90deg, #81c784, #66bb6a); }
+        .category-课堂游戏::before { background: linear-gradient(90deg, #81c784, #66bb6a); }
         .category-微课制作::before { background: linear-gradient(90deg, #e57373, #f44336); }
         
         /* 描述装饰条 */
@@ -627,7 +627,7 @@
         .category-软件使用 .card-body p::before { background: #ba68c8; }
         .category-信息科技 .card-body p::before { background: #4db6ac; }
         .category-数学工具 .card-body p::before { background: #ffb74d; }
-        .category-视频加工 .card-body p::before { background: #81c784; }
+        .category-课堂游戏 .card-body p::before { background: #81c784; }
         .category-微课制作 .card-body p::before { background: #e57373; }
         
         /* 卡片悬停效果增强 */
@@ -691,12 +691,12 @@
                 <li><a href="#" data-category="通用资源"><i class="fas fa-globe"></i> 通用资源</a></li>
                 <li><a href="#" data-category="继续教育"><i class="fas fa-graduation-cap"></i> 继续教育</a></li>
                 <li><a href="#" data-category="人工智能"><i class="fas fa-brain"></i> 人工智能</a></li>
-                <li><a href="#" data-category="办公软件"><i class="fas fa-file-alt"></i> 办公软件</a></li>
-                <li><a href="#" data-category="软件使用"><i class="fas fa-laptop"></i> 软件使用</a></li>
+                <li><a href="#" data-category="课堂游戏"><i class="fas fa-video"></i> 课堂游戏</a></li>
                 <li><a href="#" data-category="信息科技"><i class="fas fa-microchip"></i> 信息科技</a></li>
                 <li><a href="#" data-category="数学工具"><i class="fas fa-calculator"></i> 数学工具</a></li>
                 <li><a href="#" data-category="通讯网盘"><i class="fas fa-cloud"></i> 通讯网盘</a></li>
-                <li><a href="#" data-category="视频加工"><i class="fas fa-video"></i> 视频加工</a></li>
+                <li><a href="#" data-category="办公软件"><i class="fas fa-file-alt"></i> 办公软件</a></li>
+                <li><a href="#" data-category="软件使用"><i class="fas fa-laptop"></i> 软件使用</a></li>
                 <li><a href="#" data-category="微课制作"><i class="fas fa-film"></i> 微课制作</a></li>
             </ul>
         </div>
@@ -801,9 +801,13 @@
             {name:"继续教育证书查询",url:"https://ggfw.hrss.gd.gov.cn/zjjyweb/hisInfoCK/to.do",category:"继续教育", desc: "继续教育证书查询系统"}, 
             {name:"广东省人社厅网上服务平台",url:"https://ggfw.hrss.gd.gov.cn/isso/login.html",category:"继续教育", desc: "打印社保清单"}, 
             {name:"广东省继续教育管理系统",url:"https://ggfw.hrss.gd.gov.cn/zjjyweb/",category:"继续教育", desc: "广东省继续教育管理平台"},
-           
+            {name:"广州市教师数字素养提升系列活动管理平台",url:"https://gzcx.gzdjg.edu.cn/guanli/user/loginUser",category:"继续教育", desc: "双融双创市平台"},
+
             // 人工智能
             {name:"AI工具集",url:"https://ai-bot.cn/",category:"人工智能", desc: "AI工具集合"},
+            {name:"飞象老师",url:"https://www.feixianglaoshi.com/",category:"人工智能", desc: "制作交互网页的平台"},
+            {name:"椒图AI",url:"https://www.jiaotuai.cn/",category:"人工智能", desc: "AI生图"},
+            {name:"在问AI",url:"https://chat.zaiwenai.com/",category:"人工智能", desc: "AI助手"},
             {name:"deepseek",url:"https://www.deepseek.com/",category:"人工智能", desc: "DeepSeek人工智能平台"},
             {name:"豆包",url:"https://www.doubao.com/chat/",category:"人工智能", desc: "豆包AI智能助手"},
             {name:"即梦AI",url:"https://jimeng.jianying.com/ai-tool/home",category:"人工智能", desc: "AI生成图片"},
@@ -820,13 +824,16 @@
 
 
             // 通讯网盘
-            {name:"百度网盘",url:"http://pan.baidu.com/",category:"通讯网盘", desc: "百度网盘"},
+            {name:"百度",url:"https://www.baidu.com",category:"通讯网盘", desc: "百度"},
+            {name:"微信文件传输",url:"https://filehelper.weixin.qq.com/",category:"通讯网盘", desc: "微信文件传输"},
+            {name:"公众号登录",url:"https://mp.weixin.qq.com/",category:"通讯网盘", desc: "公众号登录"},
+            {name:"WPS群收文件",url:"https://yunbiz.wps.cn/c/",category:"通讯网盘", desc: "WPS群收文件"},
             {name:"邮箱QQ",url:"https://mail.qq.com/",category:"通讯网盘", desc: "QQ邮箱"},
+            {name:"百度网盘",url:"http://pan.baidu.com/",category:"通讯网盘", desc: "百度网盘"},
             {name:"蓝奏云",url:"https://up.woozooo.com/",category:"通讯网盘", desc: "蓝奏云网盘"},
             {name:"123网盘",url:"https://www.123pan.com/",category:"通讯网盘", desc: "123网盘服务"},
             {name:"坚果云",url:"https://www.jianguoyun.com/",category:"通讯网盘", desc: "坚果云网盘"},
             {name:"阿里云盘",url:"https://www.aliyundrive.com/sign/in",category:"通讯网盘", desc: "阿里云盘"},
-            {name:"微信网页版",url:"https://wx.qq.com/",category:"通讯网盘", desc: "微信网页版"},
             {name:"邮箱139",url:"https://mail.10086.cn/default.html",category:"通讯网盘", desc: "139邮箱"},
             {name:"邮箱189",url:"https://webmail30.189.cn/w2/index.html",category:"通讯网盘", desc: "189邮箱"},
   
@@ -843,30 +850,21 @@
             {name:"随机抽奖转盘",url:"https://cn.piliapp.com/random/wheel/",category:"通用资源", desc: "随机抽奖"},
             {name:"比赛计分板",url:"https://cn.piliapp.com/scoreboard/?theme=bright",category:"通用资源", desc: "计分板"},
             {name:"课堂通用辩论计时器",url:"https://8ht9vvyh.html2web.com",category:"通用资源", desc: "课堂辩论"},
+            {name:"课堂有点酷",url:"https://www.ketang.cool/",category:"通用资源", desc: "纸条范、快抢、击鼓传花、量规等教育技术工具"},
+        {name:"学生评语生成器",url:"https://class.acagrid.com/pc/comment",category:"通用资源", desc: "评语生成"},
         {name:"随机分组工具",url:"https://cn.piliapp.com/random/team/",category:"通用资源", desc: "分组工具"},
   {name:"习题打印生成器",url:"https://www.dayin.page/",category:"通用资源", desc: "语数英练习题"},
         {name:"在线提词器免登录",url:"https://cn.teleprompter-online.com/",category:"通用资源", desc: "提词器"},
         {name:"免登录免费PDF压缩",url:"https://pdfzap.toolooz.com/",category:"通用资源", desc: "PDF文件压缩"},
-        {name:"ico图标生成器",url:"https://quanxin.org/favicon",category:"通用资源", desc: "ico图标生成器"},  
         {name:"端到端文件传输",url:"https://wormhole.app/",category:"通用资源", desc: "文件传输"},  
-       {name:"中秋猜灯谜",url:"https://v7kf4w6s.html2web.com",category:"通用资源", desc: "猜灯谜"},  
-       {name:"中秋猜字谜",url:"https://apx07so5.html2web.com",category:"通用资源", desc: "猜字谜"},
 
 
+            // 课堂游戏
+       {name:"中秋猜灯谜",url:"https://v7kf4w6s.html2web.com",category:"课堂游戏", desc: "猜灯谜"},  
+       {name:"中秋猜字谜",url:"https://apx07so5.html2web.com",category:"课堂游戏", desc: "猜字谜"},
+       {name:"抽象谐音梗游戏",url:"https://musk-online.fbcontent.cn/pub-musk-ai-studio/workflow/file/document/4mYRHxGbPbeSG54QR53e5J.html",category:"课堂游戏", desc: "谐音梗游戏"},
+       {name:"表情包猜成语",url:"https://musk-online.fbcontent.cn/pub-musk-ai-studio/workflow/file/document/29v7byu7Y43k6nxp7WP5ac.html",category:"课堂游戏", desc: "表情包猜成语"},
 
-
-
-
-
-            // 视频加工
-            {name:"抖音TikTok无水印下载",url:"https://dlpanda.com/zh-CN",category:"视频加工", desc: "抖音TikTok无水印下载工具"},
-{name:"哔哩哔哩视频下载",url:"https://snapany.com/zh/bilibili",category:"视频加工", desc: "B站视频解析"},
-            {name:"小红书视频解析",url:"https://xiaohongshu.day/zh/",category:"视频加工", desc: "小红书视频解析"},
-            {name:"央视网",url:"https://tv.cctv.com/",category:"视频加工", desc: "央视网CCTV"},
-            {name:"哔哩哔哩 bilibili",url:"https://www.bilibili.com/",category:"视频加工", desc: "哔哩哔哩视频平台"},
-            {name:"优酷视频",url:"https://www.youku.com/ku/webhome",category:"视频加工", desc: "优酷视频平台"},
-            {name:"腾讯视频",url:"https://v.qq.com/",category:"视频加工", desc: "腾讯视频平台"},
-            {name:"好看视频",url:"https://haokan.baidu.com/",category:"视频加工", desc: "好看视频平台"},
             
             // 办公软件
             {name:"学会设置保护隐私的在线文档",url:"https://mp.weixin.qq.com/s/e8yIetlD7gwQDprEgnXlQw",category:"办公软件", desc: "5分钟学会设置保护隐私的在线文档"},
@@ -916,28 +914,37 @@
   {name:"数学课标2022",url:"https://edui123.com/sxkb/#/",category:"数学工具", desc: "数学新课标"},
             {name:"小学口算题卡互动网页",url:"https://1d7jvk6k.html2web.com",category:"数学工具", desc: "怡园小学专用口算题卡"},
             {name:"基本口算练习出题神器",url:"https://f0roftmg.html2web.com/",category:"数学工具", desc: "口算题出题"},
-  {name:"分与合",url:"https://oeq3psrj.html2web.com",category:"数学工具", desc: "分与合"},
- {name:"倒水游戏",url:"https://yoqt5lit.html2web.com",category:"数学工具", desc: "倒水游戏"},
- {name:"曹冲称象",url:"https://edui123.com/cccx/",category:"数学工具", desc: "曹冲称象"},
-            {name:"24点出题器",url:"https://uz59dml2.html2web.com",category:"数学工具", desc: "24点出题器"},
-           {name:"对称轴",url:"https://kbthce6x.html2web.com",category:"数学工具", desc: "平面图形的对称轴演示"},
-           {name:"百数表",url:"https://k3nwb2or.html2web.com",category:"数学工具", desc: "百数表拼图游戏"},
- {name:"摆正方形",url:"https://i8pdqexb.html2web.com",category:"数学工具", desc: "摆正方形"},
-{name:"摆正方体",url:"https://7v7h35pz.html2web.com",category:"数学工具", desc: "摆正方体"},
-            {name:"观察组合正方体",url:"https://edui123.com/3d/",category:"数学工具", desc: "组合正方体"},
-
- {name:"正方体展开图 演示",url:"https://uienws7d.html2web.com/",category:"数学工具", desc: "交互式正方体展开图 (Cube Net) 演示"},
- {name:"平四面积公式演示",url:"https://xlf0offy.html2web.com/",category:"数学工具", desc: "平行四边形面积公式交互式演示"},
-   {name:"数角演示",url:"https://v06irtm0.html2web.com/",category:"数学工具", desc: "数角"},
-  {name:"圆周率的探究",url:"https://r0j1dnlk.html2web.com",category:"数学工具", desc: "圆周率的探究"},
-            {name:"可能性骰子",url:"https://cn.piliapp.com/random/dice/?num=1",category:"数学工具", desc: "五下可能性"},
-            {name:"可能性硬币",url:"https://cn.piliapp.com/random/coin/",category:"数学工具", desc: "五下可能性"},
-   {name:"两车相遇问题教学",url:"https://e6f62tvh.html2web.com/",category:"数学工具", desc: "相遇问题"},
-
-
-
-
-
+  {name:"一上：分与合",url:"https://oeq3psrj.html2web.com",category:"数学工具", desc: "分与合"},
+  {name:"一下：百数表",url:"https://k3nwb2or.html2web.com",category:"数学工具", desc: "百数表拼图游戏"},
+   {name:"二上：数角演示",url:"https://v06irtm0.html2web.com/",category:"数学工具", desc: "数角"},
+  {name:"一下：虚拟钉子板",url:"https://edui123.com/dzb/",category:"数学工具", desc: "虚拟钉子板"},
+  {name:"二下：古代算盘",url:"https://edui123.com/suanpan/",category:"数学工具", desc: "古代算盘"},
+ {name:"三上：曹冲称象",url:"https://edui123.com/cccx/",category:"数学工具", desc: "曹冲称象"},
+ {name:"三下：年月历",url:"https://edui123.com/nyr/",category:"数学工具", desc: "年月历"},
+ {name:"三下：摆正方形",url:"https://i8pdqexb.html2web.com",category:"数学工具", desc: "摆正方形"},  
+ {name:"三下：对称轴",url:"https://kbthce6x.html2web.com",category:"数学工具", desc: "平面图形的对称轴演示"},
+ {name:"四上：田忌赛马",url:"https://edui123.com/tjsm/",category:"数学工具", desc: "田忌赛马"},
+ {name:"四上：平行四边形的认识",url:"https://edui123.com/pxsbx/",category:"数学工具", desc: "平行四边形"},
+ {name:"四上：平四面积公式演示",url:"https://xlf0offy.html2web.com/",category:"数学工具", desc: "平行四边形面积公式交互式演示"},
+ {name:"四上：烙饼问题",url:"https://edui123.com/lbwt/",category:"数学工具", desc: "平行四边形"},
+ {name:"四上：倒水游戏",url:"https://yoqt5lit.html2web.com",category:"数学工具", desc: "倒水游戏"},
+ {name:"四下：鸡兔同笼",url:"https://edui123.com/lbwt/",category:"数学工具", desc: "鸡兔同笼"},
+ {name:"四下：统计",url:"https://edui123.com/tjsr/",category:"数学工具", desc: "统计"},
+  {name:"四下：两车相遇问题教学",url:"https://e6f62tvh.html2web.com/",category:"数学工具", desc: "相遇问题"},
+{name:"四下：24点出题器",url:"https://uz59dml2.html2web.com",category:"数学工具", desc: "24点出题器"},
+ {name:"五上：小路面积相等",url:"https://edui123.com/tjsr/",category:"数学工具", desc: "小路面积相等"},
+ {name:"五上：循环小数计数器",url:"https://edui123.com/xhxs/",category:"数学工具", desc: "循环小数"},
+ {name:"五下：摆正方体",url:"https://7v7h35pz.html2web.com",category:"数学工具", desc: "摆正方体"},
+ {name:"五下：观察组合正方体",url:"https://edui123.com/3d/",category:"数学工具", desc: "组合正方体"},
+ {name:"五下：正方体展开图 演示",url:"https://uienws7d.html2web.com/",category:"数学工具", desc: "交互式正方体展开图 (Cube Net) 演示"},
+ {name:"五下：可能性骰子",url:"https://cn.piliapp.com/random/dice/?num=1",category:"数学工具", desc: "五下可能性"},
+{name:"五下：可能性硬币",url:"https://cn.piliapp.com/random/coin/",category:"数学工具", desc: "五下可能性"},
+{name:"六上：确定起跑线",url:"https://edui123.com/qpx/",category:"数学工具", desc: "确定起跑线"},
+{name:"六上：圆的周长测量（滚动法）",url:"https://edui123.com/ygdf/",category:"数学工具", desc: "圆的周长测量（滚动法）"},
+ {name:"六上：圆周率的探究",url:"https://r0j1dnlk.html2web.com",category:"数学工具", desc: "圆周率的探究"},
+{name:"六下：圆柱侧面展开图",url:"https://edui123.com/yzcm/",category:"数学工具", desc: "圆柱侧面展开图"},
+{name:"六下：平面图形旋转成体",url:"https://edui123.com/xzct/",category:"数学工具", desc: "平面图形旋转成体"},
+{name:"六下：自行车里的数学",url:"https://edui123.com/zxc/",category:"数学工具", desc: "自行车里的数学"},
 
 
 
